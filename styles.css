@@ -1,0 +1,114 @@
+body {
+    color: white;
+}
+
+#firstSection {
+    display: flex;
+    width:100%;
+}
+
+#profileDiv {
+    width: 50%;
+    text-align: center;
+    background-color: #011726;
+}
+
+#profileDiv > button {
+    background-color: #82d0d9;
+    color: #011726;
+}
+
+#profileImageDiv {
+    width: 50%;
+    text-align: right;
+    background-image: linear-gradient(black, black), url(./img/profileImage.jpg);
+    background-blend-mode: saturation;
+    background-size: cover;
+    color: #011726;
+}
+
+#linksDiv1{
+    display: flex;
+    flex-direction: column;
+}
+
+#secondSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1b818c;
+}
+
+#thirdSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+#educationDiv1 {
+ background-color: #024159;
+ width: 33%;
+}
+#educationDiv2 {
+background-color: #025e73;
+width: 33%;
+}
+
+#educationDiv3 {
+background-color: #82d0d9;
+width: 33%;
+}
+
+#fourthSection {
+    display: flex;
+    flex-direction: column;
+}
+
+#fourthSectionTitle {
+    color:#00436c;
+    text-align: center;
+}
+
+.projectDiv{
+    display: flex;
+}
+
+.projectDiv:nth-child(2),.projectDiv:nth-child(5){
+    background-color: #011726;
+}
+
+.projectDiv:nth-child(odd) > .projectTextDiv > button{
+    background-color: #82d0d9;
+    color: #011726;
+}
+.projectDiv:nth-child(even) > .projectTextDiv > button{
+    background-color: #011726;
+    color: white;
+}
+
+
+.projectDiv:nth-child(3), .projectDiv:nth-child(6) {
+    background-color: #1b818c;
+}
+.projectDiv:nth-child(4), .projectDiv:nth-child(7) {
+    background-color: #025e73;
+}
+
+#fifthSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b818c;
+}
+
+#emailDiv {
+    display: flex;
+}
+
+#linksDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #024159;
+}
