@@ -1,14 +1,25 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
 body {
+    margin: 0;
+    padding: 0;
     color: white;
+    font-family: 'Montserrat';
 }
 
 #firstSection {
     display: flex;
     width:100%;
+    height: 100vh;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
 }
 
 #profileDiv {
-    width: 50%;
+    width: 49.5%;
     text-align: center;
     background-color: #011726;
 }
@@ -16,10 +27,13 @@ body {
 #profileDiv > button {
     background-color: #82d0d9;
     color: #011726;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-style: none;
 }
 
 #profileImageDiv {
-    width: 50%;
+    width: 49.5%;
     text-align: right;
     background-image: linear-gradient(black, black), url(./img/profileImage.jpg);
     background-blend-mode: saturation;
@@ -33,6 +47,8 @@ body {
 }
 
 #secondSection {
+    height: 50vh;
+    margin-bottom: 0.5em;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -40,8 +56,35 @@ body {
 }
 
 #thirdSection {
+    height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    margin: 0.5em;
+}
+
+#thirdSectionTitle {
+    color: #024159 ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+}
+
+#thirdSectionContent {
+    display: flex;
+    height: 40vh;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+.educationDiv {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #educationDiv1 {
@@ -51,6 +94,7 @@ body {
 #educationDiv2 {
 background-color: #025e73;
 width: 33%;
+margin: 0 0.5em;
 }
 
 #educationDiv3 {
@@ -58,33 +102,59 @@ background-color: #82d0d9;
 width: 33%;
 }
 
+.educationDivStyleSpan {
+    height: 1.5em;
+}
+
+.educationDivText {
+    font-size: x-small;
+    height: 50%;
+}
+
+.educationDivText > h4{
+    font-size: large;
+}
+
+
 #fourthSection {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0.5em;
 }
 
 #fourthSectionTitle {
     color:#00436c;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh ;
 }
 
 .projectDiv{
     display: flex;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.projectImage {
+    height: 50%;
+}
+
+.projectTextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 40%;
+    margin-left: 2em;
 }
 
 .projectDiv:nth-child(2),.projectDiv:nth-child(5){
     background-color: #011726;
 }
-
-.projectDiv:nth-child(odd) > .projectTextDiv > button{
-    background-color: #82d0d9;
-    color: #011726;
-}
-.projectDiv:nth-child(even) > .projectTextDiv > button{
-    background-color: #011726;
-    color: white;
-}
-
 
 .projectDiv:nth-child(3), .projectDiv:nth-child(6) {
     background-color: #1b818c;
@@ -93,10 +163,40 @@ width: 33%;
     background-color: #025e73;
 }
 
+.projectTextDiv > button{
+    background-color: #82d0d9;
+    color: #011726;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-style: none;
+    height: 2em;
+    width: 10em;
+}
+.projectDiv:nth-child(3n) > .projectTextDiv > button{
+    background-color: #011726;
+    color: white;
+}
+
+.projectTextDiv > h1 {
+    margin-bottom: 0.2em;
+}
+
+.projectTextDiv > h4 {
+    margin-bottom: 1em;
+}
+
+.projectTextDiv > p {
+    margin-bottom: 0.8em;
+}
+
+
 #fifthSection {
     display: flex;
     flex-direction: column;
     background-color: #1b818c;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
 }
 
 #emailDiv {
