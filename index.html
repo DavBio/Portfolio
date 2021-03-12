@@ -18,42 +18,44 @@
        
         <section id="firstSection">
             <div id="profileDiv">
-                <p>David</p>
-                <h1>David Biolchini</h1>
-                <h4>Desenvolvedor Web Front-End</h4>
-                <p></p>
-                <p>No momento estou estudando desenvolvimento web frontend com react na Labenu!
-                    Aprimorando o conhecimento adquirido estudando
-                    programação sozinho.Também estudo produção de conteúdo
-                    para rádio, tv e internet na UFJF onde pude ter experiências
-                    como produtor, videomaker, editor e fotógrafo através de
-                    voluntariado e bolsas de extensão. Na universidade despertei
-                    minha paixão por programação e tive contado com temas
-                    que se aliam e complementam o desenvolvimento web.
-                    Atualmente sou bolsista no LAVIDOC auxiliando na produção
-                    de documentários. Interessado em novas mídias, tecnologias
-                    e diferentes visões de mundo.
+                <p id="headerName">David</p>
+                <div id="profileTextDiv">
+                    <h1> Eu Sou </br> David Biolchini</h1>
+                    <h4>Desenvolvedor Web Front-End</h4>
+                    <p>No momento estou estudando desenvolvimento web frontend com react na Labenu!
+                        Aprimorando o conhecimento adquirido estudando
+                        programação sozinho.Também estudo produção de conteúdo
+                        para rádio, tv e internet na UFJF onde pude ter experiências
+                        como produtor, videomaker, editor e fotógrafo através de
+                        voluntariado e bolsas de extensão. Na universidade despertei
+                        minha paixão por programação e tive contado com temas
+                        que se aliam e complementam o desenvolvimento web.
+                        Atualmente sou bolsista no LAVIDOC auxiliando na produção
+                        de documentários. Interessado em novas mídias, tecnologias
+                        e diferentes visões de mundo.
                     </p>
-                <ul class='list'>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>React.js</li>
-                </ul>
-                <button id="pdfButton">CV em PDF</button>
+                        
+                    <ul class='list' id="profileTextListDiv">
+                        <li><b>|</b> HTML</li>
+                        <li><b>|</b> CSS</li>
+                        <li><b>|</b> Javascript</li>
+                        <li><b>|</b> React.js</li>
+                    </ul>
+
+                    <button id="pdfButton">CV em PDF</button>
+                </div>
             </div>
            
             <div id="profileImageDiv">
                 <div id="headerDiv">
-                    <a id="whoAmI" href="#whoAmI">quem sou eu</a>
+                    <a id="whoAmI" href="#whoAmI">quem sou</a>
                     <a href="#projectSection">projetos</a>
                     <a href="#contact">contato</a>
                 </div>
                 <div id="linksDiv1">
-                    <a><img class="logo" src="img/linkedinLogo.svg"></a>
-                    <a><img class="logo" src="img/wppLogo.svg"></a>
-                    <a><img class="logo" src="img/githubLogo.svg"></a>
-                    <a><img class="logo" src="img/ttLogo.svg"></a>
+                    <a href="https://www.linkedin.com/in/david-biolchini/" target="_blank"><img class="logo" src="img/linkedinLogo.svg"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5532999678928&text&app_absent=0" target="_blank"><img class="logo" src="img/wppLogo.svg"></a>
+                    <a href="https://github.com/davBio" target="_blank"><img class="logo" src="img/githubLogo.svg"></a>
                     <a><img class="logo" src="img/instagramLogo.svg"></a>
                 </div>
             
@@ -107,55 +109,55 @@
             <a id="projectSection"></a>
             <div id="fourthSectionTitle"><h2>Meus Projetos</h2></div>
             
-            <div class="projectDiv">
-                <img class="projectImage" src="img/macbook.png">
-                <div class="projectTextDiv">
+            <div class="projectDiv" id="bgDark">
+                <img class="projectImage" src="img/pokedexImg.png">
+                <div class="projectTextDiv" >
                     <h1>Pokédex</h1>
                     <h4>Front-End</h4>
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <button>Ver no GitHub</button>
+                        <a href="https://github.com/DavBio/Pokedex" target="_blank"><button>Ver no GitHub</button></a>
                 </div>
             </div>
             
-            <div class="projectDiv">
-                <img class="projectImage" src="img/macbook.png">
+            <div class="projectDiv" id="bgLight">
+                <img class="projectImage" src="img/ifutureImg.png">
                 <div class="projectTextDiv">
                     <h1>IFuture</h1>
                     <h4>Front-End</h4>
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <button>Ver no GitHub</button>
+                        <a href="https://github.com/DavBio/iFuture" target="_blank"><button>Ver no GitHub</button></a>
                 </div>
             </div>
             
-            <div class="projectDiv">
+            <div class="projectDiv" id="bgRegular">
                 <img class="projectImage" src="img/macbook.png">
-                <div class="projectTextDiv">
-                    <h1>Astrodev</h1>
+                <div class="projectTextDiv" >
+                    <h1>Astromatch</h1>
                     <h4>Front-End</h4>
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <button>Ver no GitHub</button>
+                        <a href="https://github.com/DavBio/Astromatch" target="_blank"><button>Ver no GitHub</button></a>
                 </div>
             </div>
             
-            <div class="projectDiv">
+            <div class="projectDiv" id="bgDark">
                 <img class="projectImage" src="img/macbook.png">
-                <div class="projectTextDiv">
+                <div class="projectTextDiv" >
                     <h1>Calculadora</h1>
                     <h4>Front-End</h4>
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <button>Ver no GitHub</button>
+                        <a href="https://github.com/DavBio/Calculator" target="_blank"><button>Ver no GitHub</button></a>
                 </div>
             </div>
             
-            <div class="projectDiv">
+            <div class="projectDiv" id="bgLight">
                 <img class="projectImage" src="img/macbook.png">
                 <div class="projectTextDiv">
                     <h1>Com Você</h1>
@@ -163,11 +165,11 @@
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <button>Ver no GitHub</button>
+                        <a href="https://github.com/DavBio/ComVoce" target="_blank"><button>Ver no GitHub</button></a>
                 </div>
             </div>
             
-            <div class="projectDiv">
+            <div class="projectDiv" id="bgRegular">
                 <img class="projectImage" src="img/macbook.png">
                 <div class="projectTextDiv">
                     <h1>Etch-a-Scketch</h1>
@@ -175,7 +177,7 @@
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <button>Ver no GitHub</button>
+                        <a href="https://github.com/DavBio/etch-a-sketch" target="_blank"><button>Ver no GitHub</button></a>
                 </div>
             </div>
         </section>
@@ -184,7 +186,7 @@
             <a id="contact"></a>
             <div id="emailDiv">
                 <img src="img/email.svg">
-                <div>
+                <div id="contactTextDiv">
                     <h1>Contrate-me</h1>
                     <p>Procuro oportunidade de trabalho onde eu possa aprender, me desenvolver e evoluir na minha carreira profissional<br/>
                         <br/>
@@ -194,11 +196,10 @@
                 </div>
             </div>
                 <div id="linksDiv2">
-                    <a><img class="logo" src="img/linkedinLogo.svg"></a>
-                    <a><img class="logo" src="img/wppLogo.svg"></a>
-                    <a><img class="logo" src="img/githubLogo.svg"></a>
-                    <a><img class="logo" src="img/ttLogo.svg"></a>
-                    <a><img class="logo" src="img/instagramLogo.svg"></a>
+                    <a href="https://www.linkedin.com/in/david-biolchini/" target="_blank"><img class="logo" src="img/linkedinLogo.svg"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5532999678928&text&app_absent=0" target="_blank"><img class="logo" src="img/wppLogo.svg"></a>
+                    <a href="https://github.com/davBio" target="_blank"><img class="logo" src="img/githubLogo.svg"></a>
+                    <a href="https://www.instagram.com/davbio/" target="_blank"><img class="logo" src="img/instagramLogo.svg"></a>
                 </div>
             
         </section>

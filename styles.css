@@ -22,14 +22,58 @@ body {
     width: 49.5%;
     text-align: center;
     background-color: #011726;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
 }
 
-#profileDiv > button {
+#headerName {
+    margin: 1em;
+}
+
+
+#profileTextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    margin: auto 4em;
+}
+
+#profileTextDiv > h1 {
+    font-size: xxx-large;
+}
+
+#profileTextDiv > h4 {
+    font-size: larger;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+#profileTextDiv > p {
+    margin-bottom: 1em;
+    font-size: smaller;
+}
+
+#profileTextDiv > button {
     background-color: #82d0d9;
     color: #011726;
     border-radius: 8px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     border-style: none;
+    height: 2em;
+    width: 10em;
+    margin: 1em;
+}
+
+#profileTextListDiv {
+    display: flex;
+}
+
+#profileTextListDiv > li {
+    margin-right: 1em;
+    list-style: none;
 }
 
 #profileImageDiv {
@@ -45,6 +89,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 1em;
 }
 
 #headerDiv > a {
@@ -58,8 +103,14 @@ body {
 }
 
 #linksDiv1{
+    margin-top: 8em;
     display: flex;
     flex-direction: column;
+}
+
+.logo{
+    height: 2em;
+    margin: 1em;
 }
 
 #secondSection {
@@ -71,8 +122,27 @@ body {
     background-color: #1b818c;
 }
 
+#secondSection > p {
+    margin: 2em;
+}
+
+#secondSection > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#secondSection > div > h1 {
+    font-size: xxx-large;
+    margin-bottom: 0.5em;
+}
+
+#secondSection > div > p {
+    width: 30%;
+}
+
 #thirdSection {
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,7 +160,7 @@ body {
 
 #thirdSectionContent {
     display: flex;
-    height: 40vh;
+    height: 50vh;
     justify-content: space-between;
     margin: 0.5em;
 }
@@ -101,6 +171,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 40vh;
 }
 
 #educationDiv1 {
@@ -168,18 +239,19 @@ width: 33%;
     margin-left: 2em;
 }
 
-.projectDiv:nth-child(2),.projectDiv:nth-child(5){
+#bgDark {
     background-color: #011726;
 }
 
-.projectDiv:nth-child(3), .projectDiv:nth-child(6) {
+#bgLight {
     background-color: #1b818c;
 }
-.projectDiv:nth-child(4), .projectDiv:nth-child(7) {
+
+#bgRegular {
     background-color: #025e73;
 }
 
-.projectTextDiv > button{
+.projectTextDiv > a > button{
     background-color: #82d0d9;
     color: #011726;
     border-radius: 8px;
@@ -188,9 +260,19 @@ width: 33%;
     height: 2em;
     width: 10em;
 }
-.projectDiv:nth-child(3n) > .projectTextDiv > button{
+
+#bgLight> .projectTextDiv > a > button{
     background-color: #011726;
     color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    filter:brightness(1.1)
+}
+
+#bgLight> .projectTextDiv > a > button:hover {
+    filter:brightness(1.4)
 }
 
 .projectTextDiv > h1 {
@@ -212,12 +294,33 @@ width: 33%;
     background-color: #1b818c;
     height: 60vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #emailDiv {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#emailDiv > img {
+    margin-right: 4em;
+}
+
+#contactTextDiv {
+    width: 30%;
+}
+
+#contactTextDiv > h1 {
+    font-size: xx-large;
+    margin-bottom: 1em;
+}
+
+#contactTextDiv > p {
+    font-size: smaller;
+}
+
+
 
 #linksDiv2 {
     display: flex;
@@ -227,4 +330,8 @@ width: 33%;
 
 footer {
     background-color: #024159;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
 }
