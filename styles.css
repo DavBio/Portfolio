@@ -410,13 +410,17 @@ footer {
     #profileImageDiv {
         width: auto;
     }
+
+    #profileImageDiv > img {
+        width: 100%;
+        height: auto;
+        transform: none;
+        left: 0%;
+    }
     
     #linksDiv1 {
         bottom: 4px;
-        left: 15%;
         top: unset;
-        right: unset;
-        display: block;
     }
 
     #secondSection {
