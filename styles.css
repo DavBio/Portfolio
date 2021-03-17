@@ -487,3 +487,22 @@ footer {
 
 
 }
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 2600px){
+
+    #firstSection {
+        background-color: #011726;
+    }
+
+    #profileDiv {
+        width: 50%;
+    }
+
+    #profileImageDiv {
+        width: 50%;
+        background-color: #011726;
+
+   }
+}
