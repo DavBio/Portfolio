@@ -56,7 +56,7 @@ body {
     font-size: smaller;
 }
 
-#profileTextDiv > button {
+#profileTextDiv  > a > button {
     background-color: #82d0d9;
     color: #011726;
     border-radius: 8px;
