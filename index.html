@@ -3,10 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Biolchini</title>
-  <!-- <meta name="description" content="David Biolchini">
-  <meta name="author" content="SitePoint"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -19,6 +17,11 @@
         <section id="firstSection">
             <div id="profileDiv">
                 <p id="headerName">David</p>
+                <div id="headerDivMobile" class="headerDiv">
+                    <a id="whoAmI" href="#whoAmI">quem sou</a>
+                    <a href="#projectSection">projetos</a>
+                    <a href="#contact">contato</a>
+                </div>
                 <div id="profileTextDiv">
                     <h1> Eu Sou </br> David Biolchini</h1>
                     <h4>Desenvolvedor Web Front-End</h4>
@@ -47,7 +50,8 @@
             </div>
            
             <div id="profileImageDiv">
-                <div id="headerDiv">
+                <img src="./img/profileImage.jpg">
+                <div id="headerDivDesktop" class="headerDiv">
                     <a id="whoAmI" href="#whoAmI">quem sou</a>
                     <a href="#projectSection">projetos</a>
                     <a href="#contact">contato</a>
@@ -117,45 +121,27 @@
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <div class="buttonDiv">
                         <a href="https://github.com/DavBio/Pokedex" target="_blank"><button>Ver no GitHub</button></a>
+                        <a href="https://davbio.github.io/Pokedex/" target="_blank"><button>Acessar</button></a>
+                    </div>
                 </div>
             </div>
             
             <div class="projectDiv" id="bgLight">
-                <img class="projectImage" src="img/ifutureImgNoBg.png">
+                <img class="projectImage" id="projectImageIphoneX" src="img/ifutureImgNoBg.png">
                 <div class="projectTextDiv">
                     <h1>IFuture</h1>
                     <h4>Front-End</h4>
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <div class="buttonDiv">
                         <a href="https://github.com/DavBio/iFuture" target="_blank"><button>Ver no GitHub</button></a>
+                        <a href="http://fat-leather.surge.sh/" target="_blank"><button>Acessar</button></a>
+                    </div>
                 </div>
             </div>
-            
-            <!-- <div class="projectDiv" id="bgRegular">
-                <img class="projectImage" src="img/macbook.png">
-                <div class="projectTextDiv" >
-                    <h1>Astromatch</h1>
-                    <h4>Front-End</h4>
-                    <p>6 meses - 2020
-
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                        <a href="https://github.com/DavBio/Astromatch" target="_blank"><button>Ver no GitHub</button></a>
-                </div>
-            </div>
-            
-            <div class="projectDiv" id="bgDark">
-                <img class="projectImage" src="img/Responsive-website-mockup-presentation.jpg">
-                <div class="projectTextDiv" >
-                    <h1>Calculadora</h1>
-                    <h4>Front-End</h4>
-                    <p>6 meses - 2020
-
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                        <a href="https://github.com/DavBio/Calculator" target="_blank"><button>Ver no GitHub</button></a>
-                </div>
-            </div> -->
             
             <div class="projectDiv" id="bgRegular">
                 <img class="projectImage" src="img/comVoceImg.png">
@@ -165,7 +151,10 @@
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <div class="buttonDiv">
                         <a href="https://github.com/DavBio/ComVoce" target="_blank"><button>Ver no GitHub</button></a>
+                        <a href="https://davbio.github.io/ComVoce/" target="_blank"><button>Acessar</button></a>
+                    </div>
                 </div>
             </div>
             
@@ -177,11 +166,14 @@
                     <p>6 meses - 2020
 
                         Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <div class="buttonDiv">
                         <a href="https://github.com/DavBio/etch-a-sketch" target="_blank"><button>Ver no GitHub</button></a>
+                        <a href="https://davbio.github.io/etch-a-sketch/" target="_blank"><button>Acessar</button></a>
+                    </div>
                 </div>
             </div>
 
-            <div id="projectDivLink"> <a target="_blank" href="https://github.com/davBio">mais projetos</a></div>
+            <a target="_blank" href="https://github.com/davBio"><button id="projectDivLink">mais projetos</button></a>
         </section>
 
         <section id="fifthSection">
